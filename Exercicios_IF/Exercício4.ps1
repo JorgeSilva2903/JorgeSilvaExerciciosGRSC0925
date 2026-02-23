@@ -6,6 +6,5 @@ if ($cheque -le $saldo) {
     Write-Host "Saída esperada:"
     Write-Host "Cheque descontado, saldo: $saldoAtualizado"
 } else {
-    Write-Host "Saída esperada:"
     Write-Host "O cheque não pode ser descontado por falta de saldo."
 }
