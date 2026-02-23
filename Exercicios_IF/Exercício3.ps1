@@ -9,6 +9,5 @@ if ($num1 -le $num2) {
     $maior = $num1
 }
 
-Write-Host "Saída esperada:"
 Write-Host "Crescente: $menor, $maior"
 Write-Host "Decrescente: $maior, $menor"
