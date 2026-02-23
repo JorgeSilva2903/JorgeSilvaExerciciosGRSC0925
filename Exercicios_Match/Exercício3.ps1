@@ -1,19 +1,12 @@
-﻿$tipoInput = Read-Host "Introduza o tipo (compra/venda)"
-$valorInput = Read-Host "Introduza o valor"
+﻿$tipo = Read-Host "Introduza o tipo de pedido (compra/venda)"
+$valor = Read-Host "Introduza o valor em €"
 
-
-$pedido = @{
-    "tipo"  = $tipoInput.ToLower()
-    "valor" = $valorInput
-}
-
+$pedido = @{ "tipo" = $tipo.ToLower(); "valor" = $valor }
 
 if ($pedido.tipo -eq "compra") {
     Write-Host "Saída -> Compra de $($pedido.valor)€"
-}
-elseif ($pedido.tipo -eq "venda") {
+} elseif ($pedido.tipo -eq "venda") {
     Write-Host "Saída -> Venda de $($pedido.valor)€"
-}
-else {
+} else {
     Write-Host "Saída -> Pedido desconhecido"
 }
