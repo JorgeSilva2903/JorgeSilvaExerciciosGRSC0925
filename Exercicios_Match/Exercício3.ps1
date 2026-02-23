@@ -4,9 +4,9 @@ $valor = Read-Host "Introduza o valor em €"
 $pedido = @{ "tipo" = $tipo.ToLower(); "valor" = $valor }
 
 if ($pedido.tipo -eq "compra") {
-    Write-Host "Saída -> Compra de $($pedido.valor)€"
+    Write-Host "Compra de $($pedido.valor)€"
 } elseif ($pedido.tipo -eq "venda") {
-    Write-Host "Saída -> Venda de $($pedido.valor)€"
+    Write-Host "Venda de $($pedido.valor)€"
 } else {
-    Write-Host "Saída -> Pedido desconhecido"
+    Write-Host "Pedido desconhecido"
 }
