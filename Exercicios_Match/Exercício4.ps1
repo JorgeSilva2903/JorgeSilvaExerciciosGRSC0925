@@ -1,4 +1,4 @@
-﻿$entrada = Read-Host "Entrada"
+﻿﻿$entrada = Read-Host "Entrada"
 
 if ($entrada.StartsWith("[") -and $entrada.EndsWith("]")) {
     Write-Host "Saída -> Lista"
