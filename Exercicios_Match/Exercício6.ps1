@@ -7,14 +7,14 @@ $servidor = @{
 }
 
 if ($servidor.status -eq "ok" -and $servidor.tempo_resposta -gt 200) {
-    Write-Host "Saída -> Servidor lento"
+    Write-Host "Servidor lento"
 }
 elseif ($servidor.status -eq "ok") {
-    Write-Host "Saída -> Servidor ativo"
+    Write-Host "Servidor ativo"
 }
 elseif ($servidor.status -eq "erro") {
-    Write-Host "Saída -> Servidor indisponível"
+    Write-Host "Servidor indisponível"
 }
 else {
-    Write-Host "Saída -> Estado desconhecido"
+    Write-Host "Estado desconhecido"
 }
