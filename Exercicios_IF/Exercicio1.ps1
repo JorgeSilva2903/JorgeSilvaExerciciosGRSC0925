@@ -12,4 +12,4 @@ if ($minutos * 60 -gt $resto) { $minutos-- }
 
 $segundosFinal = $resto % 60
 
-Write-Host "Saída esperada: $horas hora, $minutos minuto e $segundosFinal segundos."
+Write-Host "$horas hora, $minutos minuto e $segundosFinal segundos."
