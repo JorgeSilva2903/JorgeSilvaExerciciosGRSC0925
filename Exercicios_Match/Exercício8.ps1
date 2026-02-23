@@ -8,20 +8,20 @@ $n2 = [double]$num2
 switch ($operacao.ToLower()) {
     "soma" { 
         $resultado = $n1 + $n2
-        Write-Host "Saída -> $resultado"
+        Write-Host "$resultado"
     }
     "subtrai" { 
         $resultado = $n1 - $n2
-        Write-Host "Saída -> $resultado"
+        Write-Host "$resultado"
     }
     "multiplica" { 
         $resultado = $n1 * $n2
-        Write-Host "Saída -> $resultado"
+        Write-Host "$resultado"
     }
     "divide" { 
         if ($n2 -ne 0) {
             $resultado = $n1 / $n2
-            Write-Host "Saída -> $resultado"
+            Write-Host "$resultado"
         } else {
             Write-Host "Erro: Não é possível dividir por zero."
         }
