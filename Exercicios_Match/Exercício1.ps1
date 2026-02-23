@@ -2,7 +2,7 @@
 $dia = $entrada.ToLower()
 
 if ($dia -eq "sábado" -or $dia -eq "sabado" -or $dia -eq "domingo") {
-    Write-Host "Saída -> Fim de semana"
+    Write-Host "Fim de semana"
 } else {
-    Write-Host "Saída -> Dia útil"
+    Write-Host "Dia útil"
 }
