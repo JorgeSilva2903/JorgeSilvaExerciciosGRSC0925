@@ -7,16 +7,16 @@ $requisicao = @{
 }
 
 if ($requisicao.metodo -eq "GET") {
-    Write-Host "Saída -> Requisição GET recebida"
+    Write-Host "Requisição GET recebida"
 }
 elseif ($requisicao.metodo -eq "POST") {
     if (-not [string]::IsNullOrWhiteSpace($requisicao.conteudo)) {
-        Write-Host "Saída -> Requisição POST com dados válidos"
+        Write-Host "Requisição POST com dados válidos"
     }
     else {
-        Write-Host "Saída -> Requisição POST sem dados"
+        Write-Host "Requisição POST sem dados"
     }
 }
 else {
-    Write-Host "Saída -> Método não suportado"
+    Write-Host "Método não suportado"
 }
