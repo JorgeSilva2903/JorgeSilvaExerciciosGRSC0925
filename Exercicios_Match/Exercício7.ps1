@@ -8,14 +8,14 @@ $produto = @{
 
 if ($produto.categoria -eq "eletrónico" -or $produto.categoria -eq "eletronico") {
     if ($produto.preco -gt 1000) {
-        Write-Host "Saída -> Produto de luxo"
+        Write-Host "Produto de luxo"
     } else {
-        Write-Host "Saída -> Produto comum"
+        Write-Host "Produto comum"
     }
 }
 elseif ($produto.categoria -eq "alimento") {
-    Write-Host "Saída -> Produto alimentar"
+    Write-Host "Produto alimentar"
 }
 else {
-    Write-Host "Saída -> Categoria desconhecida"
+    Write-Host "Categoria desconhecida"
 }
