@@ -20,6 +20,5 @@ if ($num3 -lt $menor) {
     $menor = $num3
 }
 
-Write-Host "Saída esperada:"
 Write-Host "Maior: $maior"
 Write-Host "Menor: $menor"
