@@ -1,27 +1,27 @@
 ﻿﻿$entrada = Read-Host "Entrada"
 
 if ($entrada.StartsWith("[") -and $entrada.EndsWith("]")) {
-    Write-Host "Saída -> Lista"
+    Write-Host "Lista"
 }
 
 elseif ($entrada -match "^-?\d+$") {
-    Write-Host "Saída -> Número inteiro"
+    Write-Host "Número inteiro"
 }
 
 elseif ($entrada -match "^-?\d+[\.,]\d+$") {
-    Write-Host "Saída -> Número decimal"
+    Write-Host "Número decimal"
 }
 elseif ($entrada.StartsWith('"') -and $entrada.EndsWith('"')) {
     $conteudo = $entrada.Trim('"')
     if ($conteudo -match "^\d+[\.,]?\d*$") {
-        Write-Host "Saída -> String numérica"
+        Write-Host "String numérica"
     } else {
-        Write-Host "Saída -> String textual"
+        Write-Host "String textual"
     }
 }
 elseif ($entrada -match "[a-zA-Z]") {
-    Write-Host "Saída -> String textual"
+    Write-Host "String textual"
 }
 else {
-    Write-Host "Saída -> Tipo desconhecido"
+    Write-Host "Tipo desconhecido"
 }
