@@ -3,14 +3,14 @@
 $msg = $entrada.ToLower()
 
 if ($msg -eq "olá" -or $msg -eq "ola" -or $msg -eq "bom dia") {
-    Write-Host "Saída -> Saudação"
+    Write-Host "Saudação"
 }
 elseif ($msg.EndsWith("?")) {
-    Write-Host "Saída -> Pergunta"
+    Write-Host "Pergunta"
 }
 elseif ($msg.Contains("tchau") -or $msg.Contains("adeus")) {
-    Write-Host "Saída -> Despedida"
+    Write-Host "Despedida"
 }
 else {
-    Write-Host "Saída -> Mensagem genérica"
+    Write-Host "Mensagem genérica"
 }
